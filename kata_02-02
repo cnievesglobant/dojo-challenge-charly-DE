@@ -1,0 +1,9 @@
+
+import base64
+
+message  = 'this is a string!!'
+message_enc = message.encode('ascii')
+message_base = base64.b64encode(message_enc)
+message_base64  = message_base.decode('ascii')
+
+print(message_base64)
