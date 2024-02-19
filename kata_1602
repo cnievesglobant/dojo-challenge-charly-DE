@@ -1,0 +1,19 @@
+def sale(coin, price):
+    total_coin = coin[0] * 0.25 + coin[1] * 0.10 + coin[2] * 0.05 + coin[3] * 0.01
+    
+    if total_coin >= price:
+        return True
+    else:
+        return False
+
+#coin = [30,40,20,5]
+#price = 12.55
+coin = [2,100,0,0]
+price =  14.11
+
+
+
+if sale(coin, price):
+    print("u have enough money!!! ")
+else:
+    print("Sorry don't have the enough money in your pocket")
